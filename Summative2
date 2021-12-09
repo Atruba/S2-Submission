@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int n,y = 0,exp = 0;
+    long double factorial = 1.0;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n < 0)
+        cout << "Error!";
+    else {
+        for (int i = 1; i <= n; ++i) {
+            factorial *= i;
+        }
+        cout << n << "The factorial is = " << factorial << endl;
+    }
+   
+
+        for (int i = 1; i <= 10; ++i) {
+            cout << n << " * " << i << " = " << n * i << endl;
+        }
+
+     
+
+        cout << n << "^" << exp << " = " << pow(n, exp);
+        while (y <= 10)
+        {
+            cout << n << "^" << y << "=" << n * y << endl;
+            y++;
+        }
+        return 0;
+}
